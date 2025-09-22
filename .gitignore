@@ -1,33 +1,52 @@
-# Prerequisites
-*.d
+# Only track .cpp files and README.md
+# Ignore everything else by default
+*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Allow .cpp files
+!*.cpp
 
-# Precompiled Headers
-*.gch
-*.pch
+# Allow README.md
+!README.md
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Fortran module files
-*.mod
-*.smod
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# Build files
+CMakeLists.txt
 *.exe
 *.out
 *.app
-CMakeLists.txt
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Compiled files
+*.d
+*.slo
+*.lo
+*.gch
+*.pch
+*.lai
+*.la
+*.mod
+*.smod
+
+# Git files
+.gitattributes
